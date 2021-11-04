@@ -1,2 +1,23 @@
 # new-world-server-status-ui
 A fluid UI that lists all New World's servers and their health.
+
+## Instal
+run `yarn install`
+
+## Execution
+run `yarn start`
+
+## Run tests
+1. `npm i -g jest`
+2. `yarn test`
+
+## Important
+The app isn't going to work without an API Key located on `src\main\scripts\factory\factory.js`.
+Since it is private, please generate one yourself at https://rapidapi.com/htsachakis/api/new-world-server-status/
+
+## Stack
+- NodeJs (`17.0.1`)
+- Electron (`15.3.0`)
+- AngularJs (`1.8.2`)
+- HTML 5
+- CSS3

@@ -1,0 +1,27 @@
+{
+  "name": "new-world-server-status-ui",
+  "version": "1.0.0",
+  "description": "A fluid UI that lists all New World's servers and their health.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ./src/main/electron/main.js",
+    "test": "jest ./src/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasmndca/new-world-server-status-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasmndca/new-world-server-status-ui/issues"
+  },
+  "homepage": "https://github.com/lucasmndca/new-world-server-status-ui#readme",
+  "devDependencies": {
+    "electron": "^15.3.0"
+  },
+  "dependencies": {
+    "angular": "1.8.2"
+  }
+}
