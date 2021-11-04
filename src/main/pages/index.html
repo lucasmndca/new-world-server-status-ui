@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>New World Servers Status</title>
+</head>
+
+<body ng-app="NWApp">
+    <nav class="logo">
+        <img src="../assets/img/logo.png" alt="New World Servers Status">
+        <p>Servers status</p>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="search">
+                <input type="text" name="search" ng-model="search" id="search" placeholder="Server name...">
+            </div>
+            <div class="content" ng-controller="contentController">
+                <div class="loading-container" ng-if="undefined === list">
+                    <div class="lds-dual-ring"></div>
+                </div>
+                <div ng-repeat="item in list | filter:search" ng-click="setItem(item)" class="server-container">
+                    <img src="../assets/img/server.png">
+                    {{ item.ServerName }}
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="title"></h2>
+            <hr />
+            <p id="body"></p>
+        </div>
+    </div>
+
+    <script src="../../../node_modules/angular/angular.min.js"></script>
+    <script src="../scripts/modal.js"></script>
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/factory/factory.js"></script>
+    <script src="../scripts/controller/controller.js"></script>
+</body>
+
+</html>
