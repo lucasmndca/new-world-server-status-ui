@@ -1,6 +1,8 @@
 # new-world-server-status-ui
 A fluid UI that lists all New World's servers and their health.
 
+![image](https://user-images.githubusercontent.com/58034066/142648942-bea83c5f-b447-4d7c-89a7-43a6690a3060.png)
+
 ## Installation
 run `yarn install`
 
